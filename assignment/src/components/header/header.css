@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'header-font';
+    src: url('../../../Fonts/Fontspring-DEMO-altivo-medium.otf');
+    
+}
+@font-face {
+    font-family: 'header-small';
+    src: url('../../../Fonts/Fontspring-DEMO-altivo-thin.otf');
+    
+}
+
+.header{
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../Assets/Background.png');
+    background-size: contain;
+    background-size: auto auto;
+    background-position: center;
+}
+
+
+.header-content{
+    height: 10rem;
+    margin-top: 12rem;
+}
+.header-content{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    color: rgb(187, 176, 176);
+    font-family: 'header-font',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 2.2rem;
+}
+.heading-small{
+    color: rgb(187, 176, 176);
+    font-family: 'header-small',sans-serif;
+}
+
+@media (max-width : 480px){
+    .header{
+        display: none;
+    }
+}
